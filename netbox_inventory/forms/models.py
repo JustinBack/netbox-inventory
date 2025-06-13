@@ -94,7 +94,7 @@ class AssetForm(NetBoxModelForm):
         label='Contact Group',
         help_text='Filter contacts by group',
         initial_params={
-            'contacts': '$contact',
+            'contact': '$contact',
         },
     )
     contact = DynamicModelChoiceField(
